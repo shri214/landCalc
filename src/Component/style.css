@@ -1,0 +1,72 @@
+.dashboard {
+  background-color: #e8eef5;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+  width: 100%;
+}
+
+.calculator-dashboard {
+  background-color: #daedfc;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+  margin: auto;
+  box-shadow: 0px 0px 6px 2px #dfe0e1, inset 0px 0px 24px 5px #dfe0e1;
+}
+.heading {
+  text-align: center;
+  font-family: sans-serif;
+}
+.inputField {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#con {
+  width: 150px;
+  height: 40px;
+}
+
+input {
+  width: 60%;
+  height: 50px;
+  border: none;
+  box-shadow: 0px 0px 6px 2px #edf3f8, inset 0px 0px 24px 5px #f0f7fc;
+}
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 500px) {
+  .calculator-dashboard {
+    width: 97vw;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .inputField {
+    flex-flow: column;
+    height: 50vh;
+  }
+  #con {
+    width: 95%;
+    height: 66px;
+    font-size: 24px;
+  }
+  input {
+    width: 95%;
+    height: 60px;
+    font-size: 24px;
+  }
+  .results p {
+    font-size: 24px;
+  }
+}
